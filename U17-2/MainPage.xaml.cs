@@ -26,5 +26,9 @@ namespace U17_2
         {
             this.InitializeComponent();
         }
+        private void click_button(object sender, RoutedEventArgs e)
+        {
+            SplitPane.IsPaneOpen = !SplitPane.IsPaneOpen;
+        }
     }
 }
