@@ -10,57 +10,12 @@
 
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="auto"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="auto"/>
-        </Grid.RowDefinitions>
-        <RelativePanel>
-            <Button Name="SearchButton"
-                    Content="Search"
-                    RelativePanel.AlignRightWithPanel="True"
-                    Margin="0,0,10,0"/>
-            <TextBox Name="SearchTexBox"
-                     RelativePanel.LeftOf="SearchButton"
-                     Width="100"
-                     Margin="0,0,10,0"/>
-            <TextBlock Text="Search :"
-                       RelativePanel.LeftOf="SearchTexBox"
-                       RelativePanel.AlignVerticalCenterWithPanel="True"
-                       Margin="0,0,10,0"/>
-            <TextBlock Text="Tittle"
-                       FontSize="24"
-                       FontWeight="Bold"
-                       Margin="10,0,0,0"/>
-        </RelativePanel>
-        <Border BorderThickness="3" Background="#ffe0e0e0" Grid.Row="2" BorderBrush="#ffd2d2d2">
-            <RelativePanel>
-                <TextBlock Name="ItemTextBlock"
-                           Text="Items :"
-                           RelativePanel.AlignLeftWithPanel="True"
-                           Margin="10,5,0,5"/>
-                <TextBlock Text="10"
-                           RelativePanel.RightOf="ItemTextBlock"
-                           Margin="5,5,0,5"/>
-                <TextBlock Text="Version :"
-                           RelativePanel.LeftOf="VersionTextBlock"
-                           Margin="0,5,5,5"/>
-                <TextBlock Name="VersionTextBlock"
-                           Text="1.0.0"
-                           RelativePanel.AlignRightWithPanel="True"
-                           Margin="0,5,10,5"/>
-            </RelativePanel>
-        </Border>
-       
-    </Grid>
-    <Grid>
-        <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="3*"/>
             <RowDefinition Height="2*"/>
         </Grid.RowDefinitions>
-
         <RelativePanel>
             <Button Name="Button" Content="Search" RelativePanel.AlignRightWithPanel="True"
                     Margin="10,0,0,0"/>
@@ -90,5 +45,24 @@
             </SplitView.Content>
         </SplitView>
         <Button Content="Click Me" Click="click_button" Grid.Row="3" />
+        <Border BorderThickness="3" Background="#ffe0e0e0" Grid.Row="4" BorderBrush="#ffd2d2d2" Margin="0,272,0,0">
+            <RelativePanel>
+                <TextBlock Name="ItemTextBlock"
+                           Text="Items :"
+                           RelativePanel.AlignLeftWithPanel="True"
+                           Margin="10,5,0,5"/>
+                <TextBlock Text="10"
+                           RelativePanel.RightOf="ItemTextBlock"
+                           Margin="5,5,0,5"/>
+                <TextBlock Text="Version :"
+                           RelativePanel.LeftOf="VersionTextBlock"
+                           Margin="0,5,5,5"/>
+                <TextBlock Name="VersionTextBlock"
+                           Text="1.0.0"
+                           RelativePanel.AlignRightWithPanel="True"
+                           Margin="0,5,10,5"/>
+            </RelativePanel>
+        </Border>
+
     </Grid>
 </Page>
